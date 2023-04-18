@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Customer Clustering Batch Predictions</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        color: #0066cc;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #ddd;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #666;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #0066cc;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Customer Clustering Batch Predictions</h1>
+    <form method="post" action="{{ url_for('predictions') }}">
+      <label for="filepath">Enter file path:</label>
+      <input type="text" id="filepath" name="filepath"><br><br>
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
