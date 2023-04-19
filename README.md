@@ -21,3 +21,6 @@ Get the predictions in the same location as the input file.
 ## Contributing
 This project was done while working as an intern at iNeuron.ai.
 Akash Pathania: https://www.linkedin.com/in/akash-pathania-114924112/
+
+## Deployment Link
+http://cluster-env.eba-qdqmsnzv.ap-northeast-1.elasticbeanstalk.com/
